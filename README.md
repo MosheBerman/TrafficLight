@@ -16,6 +16,10 @@ The Cross Button:
 ---
 The Cross button becomes enabled when the light is green, but only ten seconds after the light has switched from red to green. Clicking on it accelerates the light, by immediately cycling to yellow. This way, it becomes safe to cross sooner, because the yellow light becomes red after ten seconds.
 
+Threading:
+---
+StopLight.java utilizes a Thread subclass to drive the timer loop of the light cycle. It calls a synchronized method on the StopLight which should cycle the light. It won't if the button is in the middle of causing a change, though.
+
 License:
 ---
 Feel free to inspect my coding style, but don't redistribute it.
