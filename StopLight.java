@@ -23,15 +23,13 @@ public class StopLight extends Applet implements ActionListener
 	
 	int width, height, padding, diameter, numberOfBulbs;
 	
-	int selectedBulb = 1;	//	0 is red, 1 is yellow, 2 is green
+	int selectedBulb = 2;	//	0 is red, 1 is yellow, 2 is green
 	long timestampOfLastChange;	
 	
 	Color backgroundColor;
 	Color activeColor;
 	
 	Button button;
-	
-	private Object lock;
 	
 	LightTimerThread thread;
 	
