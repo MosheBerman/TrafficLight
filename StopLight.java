@@ -97,6 +97,21 @@ public class StopLight extends Applet implements ActionListener
 			Dimension frame = button.getPreferredSize();
 			button.setBounds(width/2-frame.width/2, height, frame.width, frame.height);	
 			
+			//	If we're not allowed to use it,
+			//	then disable the button. 
+			//	We can only use it if the light
+			//	is green, and has been for at least
+			//	ten seconds
+			
+			Boolean isCrossButtonEnabled = false;
+			
+			if(selectedBulb == 2 && timeSinceLastChange() >= 10000)
+			{
+				isCrossButtonEnabled = true;
+			}
+			
+			button.setEnabled(isCrossButtonEnabled);
+			
 		}
 		
 		/* Get the "active" color */
