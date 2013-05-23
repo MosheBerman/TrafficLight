@@ -1,0 +1,61 @@
+<!-- This is a comment tag! It will be ignored by the browser. --> 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- The line above is a DTD (document type declaration). It states what kind 
+     of document this is; in this case an XHTML transitional style document.
+	 You don't need to change this line. -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Every XHTML document must have one start-html and one end-html tag. 
+	 Everything that is part of the webpage, must go between these tags. -->
+
+	 
+	<!-- The head section is where we put information for the browser, that we 
+		 don't want the user to actually see-->	 
+	<head>
+	
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Assignment #12: Threading</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		
+		<!-- The style section below can be used to create CSS styles that 
+				will ONLY apply to this page. -->
+			 
+		<style type="text/css">
+			 <!--
+				div.centered {text-align: center}
+				h1.colored {color: RED}
+			 -->
+		</style>
+	</head>
+		
+	<!-- The body section is where we put information that we want the user to see -->	 	
+   <body>
+		<div class="centered">
+			<h1 class="colored">Assignment #12</h1>
+		</div>
+		<hr />
+                
+		<ul>
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="./Animation.java">Animation Applet Source</a></li>
+		<li><a href="./Animation.class">Animation Applet Class</a></li>
+		</ul>
+
+
+				<embed id="embedTagVersion" type="application/x-java-applet;version=1.6" width="200" height="550" archive="mytest.jar" code="StopLight.class" pluginspage="http://java.com/download/">
+					<noembed>
+						No embed tag Java Support.
+					</noembed>
+				</embed>	
+		<ol>
+			<li><strong>What package is the ThreadGroup class in?</strong> java.lang.Thread</li>
+			<li><strong>How many constructors does the Thread class support?</strong> 8</li>
+			<li><strong>What are the 3 standard inputs to a Thread constructor?</strong> group, target, name</li>
+			<li><strong>Along with the run() method, bane 3 other methods supported vy the Thread class, and what they do.</strong> getName() Returns this thread's name, getThreadGroup() Returns the thread group to which this thread belongs, and join() Waits for this thread to die.</li>
+			<li><strong>What is a ThreadGroup? Why might it be useful?</strong> A thread group represents a set of threads. In addition, a thread group can also include other thread groups. The thread groups form a tree in which every thread group except the initial thread group has a parent.</li>
+   		</ol>
+	</body>
+	
+</html>
